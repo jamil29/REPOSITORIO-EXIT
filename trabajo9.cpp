@@ -6,12 +6,12 @@ using std::endl;
 int main(){
 	
 	int a;
-      cout<<"Ingresa año"<<endl;
+      cout<<"Ingresa aÃ±o"<<endl;
       cin>>a;
      if(a % 4 == 0 && (a % 100 != 0 || a % 400 == 0)){
-         cout<<"El año "<<a<<" Si es bisiesto ";
+         cout<<"El aÃ±o "<<a<<" Si es bisiesto ";
      }else{
-         cout<<"El anño "<<a<<" No es bisiesto ";
+         cout<<"El anÃ±o "<<a<<" No es bisiesto ";
      }
 	
 	return 0;
