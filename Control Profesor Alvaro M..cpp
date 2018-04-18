@@ -3,35 +3,21 @@ using namespace std;
 
 int perfecto(int n )
 {
-    int x=1,s=0;
-    while(n<=n-1)
-    {
-        while(x<=(n/2))
-        {
-            if(n%x==0)
-                s=s+x;
-                x=x+1;
-        }
-        if(n==s)
-            cout<<n<<", Es perfecto"<<endl;
-        n=n+1; x=1;s=0;
-    }
-    cin.ignore(); return 0;
+
 }
 
-
 int exponente(int v,int e){
-	
+
 	if(e==1){
 		return v;
-	}	
+	}
 	if(e==0){
 		return 1;
 	}
 	else{
 		return v*exponente(v,e-1);
 
-	}	
+	}
 }
 
 
@@ -66,12 +52,55 @@ bool esPrimo(int n){
 }
 
 
+int vprimo(int n ){
+    int num=2;
+    int cont=0;
+    while(cont!=n)
+    {
+        if(esPrimo(num))
+            {
+            cout<<cont++<<endl;
+            }
+        num+=1;
+    }
+
+}
+
+
+int interca(int a, int b)
+{
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    cout<<a<<"  "<<b;
+
+}
+
+
+
+
+
+
+
+int intercambio(int a, int b){
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    cout<<b<<" "<<a;
+}
+
+
+
+
+
+
 
 int main() {
 	/*cout<<exponente(3,4)<<endl;*/
-	/*cout<<primos()<<endl;*/
-	cout<<perfecto(6);
-	
+	/*cout<<primos()<<endl;
+	cout<<perfecto(6);*/
+	intercambio(8,66);
+
 return 0 ;
-	
+
 }
